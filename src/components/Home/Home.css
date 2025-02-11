@@ -1,0 +1,143 @@
+.home-container {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+justify-items: center;
+    gap: 2rem; /* Default gap for smaller screens */
+    align-items: center;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  @media (min-width: 1024px) {
+    .home-container {
+      gap: 350px; /* Reduced gap for larger screens */
+      margin-top: 80px;
+      margin-left: 50px;
+    }
+  }
+
+  
+  /* Text Section */
+  .home-text {
+    margin-bottom: 1rem;
+    max-width: 40rem;
+    text-align: center;
+  }
+  
+  @media (min-width: 640px) {
+    .home-text {
+      text-align: left;
+    }
+  }
+  
+  .home-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .home-heading {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .home-heading {
+      font-size: 3.75rem;
+    }
+  }
+  
+  .highlight {
+    color: #3b82f6;
+  }
+  
+  /* Contact Button */
+  .contact-button {
+    background-color: #3b82f6;
+    font-size: 1.125rem;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .social-links {
+      justify-content: flex-start;
+    }
+  }
+  
+  .linkedin-link,
+  .github-link,
+  .leetcode-link,
+  .codeforces-link {
+    font-size: 1.5rem;
+    transition: opacity 0.3s;
+  }
+  
+  .linkedin-link:hover,
+  .github-link:hover,
+  .leetcode-link:hover,
+  .codeforces-link:hover {
+    opacity: 0.8;
+  }
+  
+  .social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .social-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  
+  /* Image Section */
+  .home-image {
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+  }
+  
+  @media (min-width: 640px) {
+    .home-image {
+      justify-content: flex-end;
+      
+    }
+  }
+  
+  .profile-image {
+    width: 15.625rem;
+    height: 21.875rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px #26a95f1a;
+  }
+  
+  @media (min-width: 640px) {
+    .profile-image {
+      width: 18.75rem;
+      height: 25rem;
+    }
+  }
+  

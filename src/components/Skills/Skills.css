@@ -1,0 +1,100 @@
+/* General Section Styles */
+.skills-section {
+    padding: 4rem 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #3b82f6;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #3b82f6;
+}
+
+/* Skills Container */
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 3rem;
+    }
+}
+
+.skills-subtitle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.skills-description {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+/* Skill Bar */
+.skill-bar {
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+}
+
+.bar-background {
+    background-color: #e5e7eb;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 0.25rem;
+}
+
+.percentage {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left; /* Align percentage text to the left */
+    margin-top: 0.25rem;
+    display: block; /* Ensure the percentage text is on its own line */
+}
+
+/* Image Section */
+.skills-img-container {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .skills-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.skills-img {
+    margin-left: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,108 @@
+/* Navbar Container */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem; /* Increased font size for navbar items */
+  font-size: larger;
+ 
+}
+
+.navbar-logo img {
+  height: 40px; /* Slightly larger logo */
+  width: 40px;
+  border-radius: 5px;
+}
+
+/* Desktop Menu */
+.navbar-menu.desktop-menu {
+  font-weight: bolder;
+  display: flex;
+  gap: 2rem; /* Adjusted for spacing between items */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem; /* Increased font size for links */
+  transition: all 0.3s;
+  font-weight: bold
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: blue;
+}
+
+/* Hamburger Menu */
+.navbar-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.hamburger-icon .line {
+  width: 1.8rem; /* Increased width for visibility */
+  height: 0.15rem;
+  background-color: black;
+  transition: all 0.3s;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem; /* Slightly increased spacing between items */
+  background-color: white;
+  padding: 1.5rem 0; /* Increased padding for a more comfortable look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: slide-down 0.3s ease-in-out;
+}
+
+.mobile-menu .navbar-link {
+  font-size: 1.25rem; /* Larger font size for mobile links */
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .navbar-hamburger {
+    display: none;
+  }
+  .navbar-menu.desktop-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-hamburger {
+    display: block;
+  }
+  .navbar-menu.desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
